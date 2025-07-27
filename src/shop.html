@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - BikeHub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">BikeHub</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="https://www.instagram.com/thakuramit06" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section class="shop-section">
+        <div class="shop-header">
+            <h1>Our Collection</h1>
+            <div class="filter-container">
+                <select class="filter-select">
+                    <option value="all">All Bikes</option>
+                    <option value="mountain">Mountain Bikes</option>
+                    <option value="road">Road Bikes</option>
+                    <option value="city">City Bikes</option>
+                    <option value="electric">Electric Bikes</option>
+                </select>
+                <select class="sort-select">
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name">Name: A to Z</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="shop-grid">
+            <!-- Mountain Bikes -->
+            <div class="shop-card" data-category="mountain">
+                <div class="card-badge">New</div>
+                <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7" alt="Mountain Bike Pro">
+                <div class="card-content">
+                    <h3>Mountain Explorer X3</h3>
+                    <p class="bike-type">Mountain Bike</p>
+                    <p class="price">$899</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-cog"></i> 21 Speed</span>
+                        <span><i class="fas fa-weight"></i> 13 kg</span>
+                    </div>
+                    <button class="buy-button"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="shop-card" data-category="mountain">
+                <img src="https://images.unsplash.com/photo-1544233726-9f1d2b27be8b" alt="Mountain Bike Elite">
+                <div class="card-content">
+                    <h3>Summit Rider Elite</h3>
+                    <p class="bike-type">Mountain Bike</p>
+                    <p class="price">$1,299</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-cog"></i> 24 Speed</span>
+                        <span><i class="fas fa-weight"></i> 12 kg</span>
+                    </div>
+                    <button class="buy-button"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Road Bikes -->
+            <div class="shop-card" data-category="road">
+                <div class="card-badge">Popular</div>
+                <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e" alt="Road Bike">
+                <div class="card-content">
+                    <h3>Road Master Pro</h3>
+                    <p class="bike-type">Road Bike</p>
+                    <p class="price">$1,499</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-cog"></i> 18 Speed</span>
+                        <span><i class="fas fa-weight"></i> 8.5 kg</span>
+                    </div>
+                    <button class="buy-button"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- City Bikes -->
+            <div class="shop-card" data-category="city">
+                <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8" alt="City Bike">
+                <div class="card-content">
+                    <h3>Urban Cruiser</h3>
+                    <p class="bike-type">City Bike</p>
+                    <p class="price">$599</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-cog"></i> 7 Speed</span>
+                        <span><i class="fas fa-weight"></i> 14 kg</span>
+                    </div>
+                    <button class="buy-button"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Electric Bikes -->
+            <div class="shop-card" data-category="electric">
+                <div class="card-badge">Premium</div>
+                <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890" alt="Electric Bike">
+                <div class="card-content">
+                    <h3>E-Rider Supreme</h3>
+                    <p class="bike-type">Electric Bike</p>
+                    <p class="price">$2,499</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-battery-full"></i> 75km Range</span>
+                        <span><i class="fas fa-tachometer-alt"></i> 25km/h</span>
+                    </div>
+                    <button class="buy-button"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Add more bike cards here -->
+            <div class="shop-card" data-category="road">
+                <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde" alt="Speed Bike">
+                <div class="card-content">
+                    <h3>Speed Demon X1</h3>
+                    <p class="bike-type">Road Bike</p>
+                    <p class="price">$1,799</p>
+                    <div class="card-features">
+                        <span><i class="fas fa-cog"></i> 22 Speed</span>
+                        <span><i class="fas fa-weight"></i> 7.8 kg</span>
+                    </div>
+                    <button class="buy-button"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BikeHub</h3>
+                <p>Your trusted partner for premium bikes</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@bikehub.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BikeHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
